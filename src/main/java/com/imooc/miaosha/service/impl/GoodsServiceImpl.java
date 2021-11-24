@@ -24,6 +24,10 @@ public class GoodsServiceImpl implements IGoodsService {
     }
 
     @Override
+    public GoodsVo getGoodsVoByGoodsId(long goodsId) {
+        return miaoshaGoodsMapper.getVoById(goodsId);
+    }
+    @Override
     public GoodsVo getVoById(Long goodsId) {
         GoodsVo goodsVo = miaoshaGoodsMapper.getVoById(goodsId);
 

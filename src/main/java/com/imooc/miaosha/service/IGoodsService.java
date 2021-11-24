@@ -11,5 +11,6 @@ public interface IGoodsService {
     List<GoodsVo> list();
     GoodsVo getVoById(Long goodsId);
 
+     GoodsVo getGoodsVoByGoodsId(long goodsId);
     void decr_Stock(Long goodsId);
 }

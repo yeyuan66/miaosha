@@ -19,7 +19,7 @@ public class GlobalExceptionHandler {
     public Result<String> exceptionHandler(Exception e){
         if(e instanceof GlobalException){
 
-            HashMap
+
             GlobalException gex = (GlobalException)e;
             return Result.error(gex.getCm());
         }
